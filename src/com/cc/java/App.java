@@ -19,8 +19,8 @@ public class App {
     ausgabe(queen.fly());
     ausgabe(drone.fly());
 
-  
     }
+
 
     private static void ausgabe(String outStr) {
         System.out.println(outStr);
