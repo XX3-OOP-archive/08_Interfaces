@@ -1,7 +1,9 @@
 package com.cc.java;
-public class App {
 
-    // static Honeybee worker;
+import com.cc.java.bees.*;
+import com.cc.java.birds.Bird;
+
+public class App {
 
     public static void main(String[] args) {
       
@@ -9,15 +11,21 @@ public class App {
     HoneyBee queen = new Queen();
     HoneyBee drone = new Drone();
 
+    Bird bird = new Bird();
+
+    ausgabe("---- Bees ------");
     ausgabe(worker.doYourJob());
     ausgabe(queen.doYourJob());
     ausgabe(drone.doYourJob());
 
-    ausgabe("------------------");
+    ausgabe("---- Bird(s) ------");
+    ausgabe(bird.hasFeathers());
 
+    ausgabe("----- Bees & Bird(s)------");
     ausgabe(worker.fly());
     ausgabe(queen.fly());
     ausgabe(drone.fly());
+    ausgabe(bird.fly());
 
     }
 
